@@ -38,4 +38,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: git diff $(git log -1 --pretty='%H')..main
+        run: |
+          git fetch origin main ${{ github.event.pull_request.base.sha }}
+          git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }}

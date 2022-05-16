@@ -45,3 +45,6 @@ jobs:
 
       - name: Run a one-line script
         run: git diff origin/main HEAD
+
+      - name: Run a one-line script
+        run: git remote -v

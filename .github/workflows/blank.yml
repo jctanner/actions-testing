@@ -1,3 +1,4 @@
+
 # This is a basic workflow to help you get started with Actions
 
 name: CI
@@ -27,4 +28,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: env |sort
+        run: git branch
+        
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: git log

@@ -44,4 +44,4 @@ jobs:
 
 
       - name: Run a one-line script
-        run: git diff origin/master HEAD
+        run: git diff origin/main HEAD

@@ -39,4 +39,4 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: dump .github_env
-        run: cat .github_env
+        run: ls -al ~

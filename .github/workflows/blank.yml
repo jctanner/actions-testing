@@ -23,11 +23,20 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    
+      # Runs a single command using the runners shell
+      - name: pwd 1
+        run: pwd && ls -al
+        
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         #with:
         #  fetch-depth: 0
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: whoami
+      - name: pwd 2
+        run: pwd && ls -al
+        
+      # Runs a single command using the runners shell
+      - name: dump .github_env
+        run: ls -al ~

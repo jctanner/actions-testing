@@ -36,3 +36,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: pwd 2
         run: pwd && ls -al
+        
+      # Runs a single command using the runners shell
+      - name: dump .github_env
+        run: cat .github_env
